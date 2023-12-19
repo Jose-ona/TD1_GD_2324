@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Estilos propios web*/
+
+
+*{box-sizing: border-box; background-color: rgba(255, 255, 255, 0.396);}
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Arbutus&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=DM+Serif+Display:ital@0;1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus&family=DM+Serif+Display:ital@0;1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus&family=DM+Serif+Display:ital@0;1&family=Rubik+Mono+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arbutus&family=DM+Serif+Display:ital@0;1&family=Rubik+Mono+One&family=Shadows+Into+Light&display=swap');
+
+
+  .boxbase1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+.boxbase2{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+.box {
+    width: 400px;
+    height: 400px;
+    margin: 2%;
+    padding: 2%;
+    overflow: hidden;
+    border:  dashed rgb(164, 164, 164) ; 
+    border-width: 2px;
+ }
+.box1{font-family: 'Roboto'; font-size: 35px;}
+.box2{font-family: 'Shadows Into Light', cursive;font-size: 35px;}
+.box3{font-family: 'DM Serif Display', serif;font-size: 35px;}
+.box4{font-family: 'Rubik Mono One', monospace;font-size: 35px;}
+.box5{font-family: 'Abril Fatface', serif;font-size: 35px;}
+.box6{font-family: 'Arbutus', serif;font-size: 35px;}
+h1{font-weight: bolder; font-size:52px;padding-bottom: 5%;
+}
