@@ -1,0 +1,78 @@
+
+* {
+  box-sizing: border-box;
+}
+body{font-family:Verdana;color:#aaaaaa;}
+.encabezado{background-color:#e4e4e4;padding:15px;text-align:center;}
+.Links{overflow:auto;}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+
+  text-justify:auto;
+}
+.copy{background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: -1; 
+}
+
+@media  screen and (min-width: 375px) and (max-width: 414px) {
+  /* iPhone Vertical: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  body{font-family: 'Times New Roman', Times, serif;font-size: 4vw;}
+}
+@media screen and (min-width: 768px) and (max-width: 834px) {
+  /* iPad Vertical: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  body{font-family: 'Times New Roman', Times, serif;font-size: 5vw;}
+}
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+  /* Ordenador portátil: */
+  .menu, .main, .right, .encabezado{
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0);
+  }
+  h1{
+    color: rgb(121, 217, 255);
+  }
+  body{font-size: 1vw; background-color: wheat;}
+}
+@media only screen and (min-width: 1920px) and (max-width: 2560px) {
+  /* Pantalla grande: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  body{font-size: 10vw;}
+}
+
