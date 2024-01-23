@@ -1,0 +1,234 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*FIN DE RESET*/
+
+/*MI CODIGO CSS*/
+*{box-sizing: border-box; background-color: rgb(10, 10, 10);color: rgb(255, 255, 255);}
+body{box-sizing: border-box; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+    padding: 0;
+}
+/*HEADER*/
+.navegacion{
+    font-size: 1vw;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.navegacion a{
+    color: aliceblue;
+}
+.navegacion a:link{
+    color: rgb(255, 255, 255);
+}
+h1{
+    padding: 1%;
+    color: rgb(255, 255, 255);position: absolute;
+    z-index:0;}
+
+/*SECTION*/
+h2{
+    font-family: 'sporting_grotesqueregular';
+    font-size: 5vw;
+    width: 50%;
+    margin: 3%;
+    padding-top: 6%;
+
+}
+.row{
+    
+    display: flex;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.column{
+    flex:50%;
+    padding: 1%;
+}
+.column img{
+    margin-top: 3%;
+}
+.column a:hover img{
+    filter: blur(1px);
+    transform: scale(1.2);
+}
+
+.Lightbox{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    background: rgba(202, 220, 214, 0.274);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+    z-index: 1000;
+   
+}
+.Lightbox img{
+    max-width: 100vw;
+    max-height: 100%;
+    
+}
+.Lightbox:target{
+    transform: scale(1);
+}
+.close{
+    display: block;
+    position: absolute;
+    width: 3vh;
+    height: 3vh;
+    top: 10px;
+    right: 40px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.484);
+    justify-content: center;
+    text-align:center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.next .prev svg{
+    display: block;
+    margin: 9%;
+    width: 5vw;
+    height: 5vw;
+    line-height: 50%;
+    text-decoration: none;
+    text-align: center;
+    background-color: aqua;
+}
+
+
+/*FOOTER*/
+footer{
+    padding-top: 30%;
+    padding-bottom: 2%;
+    font-size: 1vw;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+      
+}
+.redes-sociales{
+    width: 20%;
+    padding: 1%;
+    position: absolute;
+    margin-left: 0;
+    left: 0;
+    z-index: 0;
+
+}
+a{color: aliceblue;}
+.redes-sociales a:hover{
+    color: rgb(0, 8, 251);
+}
+
+.redes-sociales a:link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    z-index: 0;
+}
+.Disclaimer{
+    width: 60%;
+    padding: 1%;  
+}
+.contacto{
+    width: 20%;
+    padding: 1%;
+    text-align: right;
+    position: absolute;
+    margin-right: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.copy{
+    font-size: 0.8vw;
+    position: fixed;
+    background-color: transparent;
+    bottom: 0;
+    padding: 1%;
+}
+/*@ MEDIAS*/
+@media (max-width : 520px) {
+    .column{
+        flex:100%;
+    }
+    img{
+        width: 100%;
+    }
+  
+}
+
+@font-face {
+    font-family: 'sporting_grotesquebold';
+    src: url('../Tipografias/sporting-grotesque/sportinggrotesque-bold-webfont.woff2') format('woff2'),
+         url('../Tipografias/sporting-grotesque/sportinggrotesque-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sporting_grotesqueregular';
+    src: url('../Tipografias/sporting-grotesque/sportinggrotesque-regular-webfont.woff2') format('woff2'),
+         url('../Tipografias/sporting-grotesque/sportinggrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

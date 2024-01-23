@@ -1,0 +1,210 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*FIN DE RESET*/
+
+/*MI CODIGO CSS*/
+*{box-sizing: border-box;color: rgb(255, 255, 255);}
+body{
+    background-image:
+		repeating-linear-gradient(	120deg, transparent, transparent 10px, rgba(255, 255, 255, 0.049) 10px, rgba(255, 255, 255, 0.148) 15px, transparent 15px, transparent 20px);
+	background-position:
+		0 90%, 0 95%;
+    background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;background-color: rgb(10, 10, 10);}
+body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 40vw;
+    background-color: blue;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: -1;
+  }
+
+/*HEADER*/
+.navegacion{
+    font-size: 1vw;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.navegacion a{
+    color: aliceblue;
+}
+.navegacion a:link{
+    color: rgb(255, 255, 255);
+}
+h1{
+    padding: 1%;
+    color: rgb(255, 255, 255);position: absolute;
+    z-index:0;}
+
+/*SECTION*/
+section{
+    justify-content: center;
+ 
+}
+.bienvenida{
+    max-width: 70%;
+    height: auto;
+    font-size: 4vw;
+    padding-top: 3%;
+    margin: 3%;
+}
+h2{
+    font-family: 'sporting_grotesquebold';
+}
+.Formulario{
+    align-items:center; 
+    width: 70%;
+    height: 100%;
+    margin-left: 16% ;
+}
+
+/*FOOTER*/
+footer{
+    padding-top: 20%;
+    padding-bottom: 2%;
+    font-size: 1vw;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+      
+}
+.redes-sociales{
+    width: 20%;
+    padding: 1%;
+    position: absolute;
+    margin-left: 0;
+    left: 0;
+
+}
+a{
+    color: aliceblue;
+}
+.redes-sociales a:hover{
+    color: rgb(0, 8, 251);
+}
+.redes-sociales a:link{
+    text-decoration: none;
+}
+.Disclaimer{
+    width: 60%;
+    padding: 1%;  
+}
+.contacto{
+    width: 20%;
+    padding: 1%;
+    text-align: right;
+    position: absolute;
+    margin-right: 0;
+    right: 0;
+}
+
+.copy{
+    font-size: 0.8vw;
+    position: fixed;
+    background-color: transparent;
+    bottom: 0;
+    padding: 1%;
+}
+/*@ MEDIAS*/
+
+@media (max-width: 620px) {
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .bienvenida {
+      max-width: 100%;
+      padding-top: 2%;
+    }
+  
+    .Formulario {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .redes-sociales {
+      width: 100%;
+      left: 0;
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .Disclaimer {
+      width: 100%;
+    }
+  
+    .contacto {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+@font-face {
+    font-family: 'sporting_grotesquebold';
+    src: url('../Tipografias/sporting-grotesque/sportinggrotesque-bold-webfont.woff2') format('woff2'),
+         url('../Tipografias/sporting-grotesque/sportinggrotesque-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sporting_grotesqueregular';
+    src: url('../Tipografias/sporting-grotesque/sportinggrotesque-regular-webfont.woff2') format('woff2'),
+         url('../Tipografias/sporting-grotesque/sportinggrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
